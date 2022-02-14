@@ -21,5 +21,6 @@ create table if not exists vacancy (
   compensation_gross boolean,
   creation_time timestamp,
   archiving_time timestamp default null,
-  foreign key (employer_id) references employer(employer_id)
+  foreign key (employer_id) references employer(employer_id),
+  foreign key (area_id) references area(area_id)
 );
